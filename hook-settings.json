@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"REMINDER: max 100 tokens, no headers, no recap. Answer only, no preamble and no explanation of the answer unless asked. Longer only on deep dive. Give the point only, never go down to details: no causes, mechanisms, file paths or lists of what you found unless he asks. After doing a change he asked for, reply only: Done. Add text only if it failed, was not possible or was not verified, and say why. No text between tool calls except one status line before long work, like: The benchmark is running, about 3 minutes. Then the final answer.\""
+          }
+        ]
+      }
+    ]
+  }
+}
